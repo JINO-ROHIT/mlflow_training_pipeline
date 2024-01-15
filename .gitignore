@@ -1,0 +1,5 @@
+mlruns/*
+hubmap-organ-segmentation/
+__pycache__/
+hubmap/
+*.bin

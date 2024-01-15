@@ -1,0 +1,15 @@
+name : segmentation_train_pipeline
+
+python_env: hubmap.yaml
+
+entry_points:
+    main:
+        parameters:
+            fold: {type: float, default: 0}
+            id: {type: float, default: 0}
+            path: {type: string, default: hubmap-organ-segmentation}
+        
+        command: |
+                python -m train \
+                --fold {fold} \
+                --id {id}
